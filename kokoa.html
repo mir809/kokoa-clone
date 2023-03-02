@@ -3,8 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>HMR website</title>
+    <title>repl.it</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+    </style>
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <h1>Create An Account</h1>
+    </header>
+    <form>
+      <main>
+        <label for="1">First name</label>
+        <input id="1" required placeholder="First name" type="text" />
+      </main>
+      <main>
+        <label for="2">Last name</label>
+        <input id="2" required placeholder="Last name" type="text" />
+      </main>
+      <main>
+        <label for="3">Email</label>
+        <input id="3" required placeholder="Email" type="email" />
+      </main>
+      <main>
+        <label for="4">Username</label>
+        <input id="4" required placeholder="Username" type="text" />
+      </main>
+      <main>
+        <label for="5">Password</label>
+        <input
+          id="5"
+          required
+          placeholder="Password"
+          type="password"
+          minlength="10"
+        />
+      </main>
+      <main>
+        <label for="6">Birth date</label>
+        <input id="6" required type="date" />
+      </main>
+      <main>
+        <label for="7">How happy are you?</label>
+        <input id="7" required type="range" name="7" list="markers" />
+        <datalist id="markers">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </main>
+      <main>
+        <label for="8">What is your fav.color?</label>
+        <input id="8" required type="color" />
+      </main>
+      <main>
+        <input id="" type="submit" value="Create Account" />
+      </main>
+    </form>
+  </body>
 </html>
