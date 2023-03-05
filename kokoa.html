@@ -9,37 +9,24 @@
         margin: 50px;
         height: 1000vh;
       }
-      p + span {
-        color: tomato;
-        text-decoration: underline;
+      input {
+        border: 2px solid blue;
       }
-      p span {
-        color: teal;
+      input:required {
+        border-color: tomato;
       }
-      div {
-        margin: 10px;
-        width: 200px;
-        height: 200px;
-        background-color: tomato;
-      }
-      div div {
-        width: 50px;
-        height: 50px;
-        background-color: teal;
+      input[placeholder~="name"] {
+        background-color: thistle;
       }
     </style>
   </head>
   <body>
-    <p>
-      blank
-      <span>inside</span>
-    </p>
-    <span>outside</span>
-    <span>222</span>
     <div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
