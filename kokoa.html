@@ -5,28 +5,84 @@
     <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <style>
+      html {
+        background-color: whitesmoke;
+      }
       body {
-        margin: 50px;
-        height: 1000vh;
+        letter-spacing: -0.5px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 900;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
-      input {
-        border: 2px solid blue;
+
+      div {
+        width: 500px;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
       }
-      input:required {
-        border-color: tomato;
+      body > div > div {
+        margin: 15px;
+        width: 200px;
+        height: 350px;
+        border: 7px solid white;
+        position: relative;
       }
-      input[placeholder~="name"] {
-        background-color: thistle;
+      body > div > div:nth-child(1) {
+        background-color: #ff6347;
+      }
+      body > div > div:nth-child(2) {
+        background-color: #deb887;
+      }
+      body > div > div:nth-child(3) {
+        background-color: #008080;
+      }
+      body > div > div:nth-child(4) {
+        background-color: #d7bfd7;
+      }
+      div > p {
+        margin: 0px;
+        background-color: white;
+        width: 200px;
+        height: 70px;
+        font-weight: 900;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 18px;
+      }
+      div > p + p {
+        font-weight: 700;
+        font-size: 15px;
+        top: 70px;
       }
     </style>
   </head>
   <body>
+    <header><p>The Best Colors</p></header>
     <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
+      <div>
+        <p>Tomato</p>
+        <p>#FF6347</p>
+      </div>
+      <div>
+        <p>Burlywood</p>
+        <p>#DEB887</p>
+      </div>
+      <div>
+        <p>Teal</p>
+        <p>#008080</p>
+      </div>
+      <div>
+        <p>Thistle</p>
+        <p>#D7BFD7</p>
+      </div>
     </div>
   </body>
 </html>
