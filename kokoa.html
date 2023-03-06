@@ -5,84 +5,42 @@
     <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <style>
-      html {
-        background-color: whitesmoke;
+      button:active {
+        background-color: blue;
       }
-      body {
-        letter-spacing: -0.5px;
-        font-family: "Times New Roman", Times, serif;
-        font-weight: 900;
-        font-size: 40px;
+      #hov:hover {
+        background-color: hotpink;
+      }
+      input:focus {
+        background-color: aqua;
+      }
+      a:visited {
+        color: tomato;
+      }
+      form {
+        border: 3px solid black;
         display: flex;
-        align-items: center;
         flex-direction: column;
+        padding: 20px;
       }
-
-      div {
-        width: 500px;
-        height: 900px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
+      form:focus-within {
+        background-color: brown;
       }
-      body > div > div {
-        margin: 15px;
-        width: 200px;
-        height: 350px;
-        border: 7px solid white;
-        position: relative;
-      }
-      body > div > div:nth-child(1) {
-        background-color: #ff6347;
-      }
-      body > div > div:nth-child(2) {
-        background-color: #deb887;
-      }
-      body > div > div:nth-child(3) {
-        background-color: #008080;
-      }
-      body > div > div:nth-child(4) {
-        background-color: #d7bfd7;
-      }
-      div > p {
-        margin: 0px;
-        background-color: white;
-        width: 200px;
-        height: 70px;
-        font-weight: 900;
-        font-size: 23px;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 18px;
-      }
-      div > p + p {
-        font-weight: 700;
-        font-size: 15px;
-        top: 70px;
+      form:hover input:focus {
+        border: 5px solid gold;
       }
     </style>
   </head>
   <body>
-    <header><p>The Best Colors</p></header>
-    <div>
-      <div>
-        <p>Tomato</p>
-        <p>#FF6347</p>
-      </div>
-      <div>
-        <p>Burlywood</p>
-        <p>#DEB887</p>
-      </div>
-      <div>
-        <p>Teal</p>
-        <p>#008080</p>
-      </div>
-      <div>
-        <p>Thistle</p>
-        <p>#D7BFD7</p>
-      </div>
-    </div>
+    <button>active</button>
+    <button id="hov">hover</button>
+    <input type="text" name="focus" />
+    <input type="text" name="focus" />
+    <a href="https://www.naver.com/">go naver</a>
+    <form>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>
