@@ -5,42 +5,22 @@
     <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <style>
-      button:active {
-        background-color: blue;
+      input::placeholder {
+        color: red;
       }
-      #hov:hover {
-        background-color: hotpink;
+      input {
+        color: #374151;
       }
-      input:focus {
-        background-color: aqua;
-      }
-      a:visited {
-        color: tomato;
-      }
-      form {
-        border: 3px solid black;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      form:focus-within {
-        background-color: brown;
-      }
-      form:hover input:focus {
-        border: 5px solid gold;
+      p::selection {
+        background-color: yellowgreen;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <button>active</button>
-    <button id="hov">hover</button>
-    <input type="text" name="focus" />
-    <input type="text" name="focus" />
-    <a href="https://www.naver.com/">go naver</a>
     <form>
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
+      <input type="text" placeholder="Name" />
     </form>
+    <p>dkdsmlvsmdio dksfksdfndslnao sdk</p>
   </body>
 </html>
