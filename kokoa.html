@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <style>
-      input::placeholder {
-        color: red;
+      :root {
+        --main-color: #16a34a;
+        --default-border: 1px solid var(--main-color);
       }
-      input {
-        color: #374151;
+      p {
+        background-color: var(--main-color);
       }
-      p::selection {
-        background-color: yellowgreen;
-        color: white;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Name" />
-    </form>
+    <div>
+      <a href="#">website</a>
+    </div>
     <p>dkdsmlvsmdio dksfksdfndslnao sdk</p>
   </body>
 </html>
