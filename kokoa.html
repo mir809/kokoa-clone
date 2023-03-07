@@ -1,122 +1,100 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-      @keyframes rotate {
-        0% {
-          transform: rotate(0);
-        }
-        20% {
-          transform: rotate(0);
-        }
-        80% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(180deg);
-        }
-      }
-      @keyframes stick {
-        0% {
-          transform: scaleY(1);
-        }
-
-        20% {
-          transform: scaleY(2);
-        }
-        40% {
-          transform: scaleY(1);
-        }
-        100% {
-          transform: scaleY(1);
-        }
-      }
-
-      html {
-        background-color: black;
-      }
       body {
-        display: flex;
         height: 100vh;
-        align-items: center;
-        justify-content: center;
-      }
-      div {
+        background-color: whitesmoke;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #6bbcbe;
-        height: 750px;
-        width: 800px;
+      }
+
+      h1 {
+        margin-bottom: 50px;
+      }
+
+      section {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .color {
+        width: 48%;
         position: relative;
+        margin-bottom: 20px;
       }
-      body > div > div {
-        height: 400px;
+
+      .color:first-child .color__bg {
+        background-color: tomato;
+      }
+
+      .color:nth-child(2) .color__bg {
+        background-color: teal;
+      }
+
+      .color:nth-child(3) .color__bg {
+        background-color: burlywood;
+      }
+
+      .color:last-child .color__bg {
+        background-color: thistle;
+      }
+
+      .color__bg {
+        height: 300px;
+        border: 5px solid white;
+      }
+
+      .color__info {
         position: absolute;
-        top: 150px;
-      }
-
-      .mid1 {
-        width: 200px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        animation: rotate 1s ease-in-out infinite;
-      }
-      .mid2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-      body > div > div > div > div {
+        width: 100%;
         background-color: white;
-        width: 15px;
-      }
-      .one {
-        height: 15px;
-        border-radius: 50%;
-        margin: 20px;
-      }
-      .two {
-        height: 70px;
-        margin: 4px;
-        animation: stick 1s infinite;
-      }
-
-      .two:nth-child(2) {
-        animation-delay: 0.1s;
-      }
-      .two:nth-child(3) {
-        animation-delay: 0.2s;
-      }
-      .two:nth-child(4) {
-        animation-delay: 0.3s;
-      }
-      .two:nth-child(5) {
-        animation-delay: 0.4s;
+        top: 20px;
+        padding: 0px 10px;
+        box-sizing: border-box;
       }
     </style>
   </head>
+
   <body>
-    <div>
-      <div>
-        <div class="mid1">
-          <div class="one"></div>
-          <div class="one"></div>
-          <div class="one"></div>
+    <h1>The Best Colors</h1>
+    <section>
+      <article class="color">
+        <div class="color__bg"></div>
+        <div class="color__info">
+          <h3>Tomato</h3>
+          <h5>#FF6347</h5>
         </div>
-        <div class="mid2">
-          <div class="two"></div>
-          <div class="two"></div>
-          <div class="two"></div>
-          <div class="two"></div>
-          <div class="two"></div>
+      </article>
+      <article class="color">
+        <div class="color__bg"></div>
+        <div class="color__info">
+          <h3>Teal</h3>
+          <h5>#008080</h5>
         </div>
-      </div>
-    </div>
+      </article>
+      <article class="color">
+        <div class="color__bg"></div>
+        <div class="color__info">
+          <h3>Burlywood</h3>
+          <h5>#DEB887</h5>
+        </div>
+      </article>
+      <article class="color">
+        <div class="color__bg"></div>
+        <div class="color__info">
+          <h3>Thistle</h3>
+          <h5>#D7BFD7</h5>
+        </div>
+      </article>
+    </section>
   </body>
 </html>
